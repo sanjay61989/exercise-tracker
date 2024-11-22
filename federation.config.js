@@ -5,7 +5,7 @@ module.exports = withNativeFederation({
   name: 'exercise-tracker',
 
   exposes: {
-    './Component': './src/app/app.component.ts',
+    './Module': './src/Exercise/Exercise.module.ts',
   },
 
   shared: {
@@ -22,5 +22,5 @@ module.exports = withNativeFederation({
 
   // Please read our FAQ about sharing libs:
   // https://shorturl.at/jmzH0
-  
+
 });
