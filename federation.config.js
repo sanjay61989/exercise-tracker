@@ -7,7 +7,7 @@ module.exports = withNativeFederation({
   name: "exercise-tracker",
 
   exposes: {
-    "./Module": "./src/Exercise/Exercise.module.ts",
+    "./web-components": "./src/Exercise/bootstrap.ts",
   },
 
   shared: {
@@ -18,13 +18,7 @@ module.exports = withNativeFederation({
     }),
   },
 
-  skip: [
-    "rxjs/ajax",
-    "rxjs/fetch",
-    "rxjs/testing",
-    "rxjs/webSocket",
-    // Add further packages you don't need at runtime
-  ],
+  skip: ["rxjs/ajax", "rxjs/fetch", "rxjs/testing", "rxjs/webSocket"],
 
   // Please read our FAQ about sharing libs:
   // https://shorturl.at/jmzH0

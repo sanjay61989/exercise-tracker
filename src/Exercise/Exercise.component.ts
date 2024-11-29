@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import connectRouter from '../connect-router';
+declare const require: any;
 
 @Component({
   selector: 'app-Exercise',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./Exercise.component.css'],
 })
 export class ExerciseComponent implements OnInit {
+  ngVersion = require('../../package.json').dependencies['@angular/core'];
+
   constructor() {
-    // alert('hello loaded exercise');
+    connectRouter();
   }
 
   ngOnInit() {}
