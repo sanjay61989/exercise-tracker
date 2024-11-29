@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { ExerciseComponent } from './Exercise.component';
+import { EXERCISE_ROUTES } from './exercise.routes';
 
-const routes: Routes = [{ path: '', component: ExerciseComponent }];
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(routes)],
+  imports: [CommonModule, RouterModule.forChild(EXERCISE_ROUTES)],
   declarations: [ExerciseComponent],
 })
 export class ExerciseModule {}
